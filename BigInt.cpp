@@ -403,7 +403,7 @@ QInt StringToQInt(string x)
 			first = 1;
 			decimal.sign = 1;
 		}
-		for (int i = x.size() - 1; i >= 0; i--)
+		for (int i = x.size() - 1; i >= first; i--)
 		{
 			decimal.digit.push_back(x[i]);
 		}
